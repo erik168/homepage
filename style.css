@@ -1,69 +1,102 @@
-ol, ul, li { list-style:none; padding:0; margin:0; }
+ol, ul, li, dl, dt, dd { list-style:none; padding:0; margin:0; }
 p, h3 { padding:0; margin:0; }
 
-a:link { color: #444; text-decoration:none; }
+a:link { color: #444; text-decoration:underline; }
 a:visited { color: #444; }
 a:hover { background: #333; color:#86ade2; }
 a:active { background: #333; color:#86ade2; }
 
 body {
-    background:##F6F6F6;
+    background:#f7f5f3;
     margin:0;
     font-size:14px;
-    color:#8c8c8c;
+    color:#675d3b;
     font-family: "Lucida Grande", "Lucida Sans Unicode", Lucida, Arial, Helvetica, sans-serif;
 }
 
 header {
+    border-top:5px solid #342d15;
     height:50px;
-    background:#444;
     zoom:1;
     width:100%;
+    background:#bcae80;
 }
 
-header h3 {
-    float:left;
-    width:200px;
-    font-size:36px;
-    margin-left:20px;
-    color:#f47b20;
-    text-shadow:1px 1px #ccc;
-}
+
 nav {
-    width:1004px;
+    width:804px;
     line-height:30px;
     height:50px;
     zoom:1;
     color:#fff;
-    float:left;
+    margin-left:200px;
 }
 nav a { 
     text-decoration:none; 
     float:left; 
     margin:5px 0 5px 10px; 
     padding:5px 10px;
-    color: #fff;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
+    color: #7d6c43;
     -webkit-transition:all .3s ease-in;
     -moz-transition:all .3s ease-in;
     border-radius:5px;
-
 }
 
-nav a:link{ color: #fff; }
-nav a:visited{ color: #fff; }
-nav a:hover{ color: #333; background: #f2f2f2; }
-nav a:active{ color: #333; background: #f2f2f2; }
+nav a:link{ color: #7d6c43; text-decoration:none; }
+nav a:visited{ color: #7d6c43; }
+nav a:hover{ background: #342d15;color:#f7f5f3}
+nav a:active{ background: none; }
+
+aside {
+    position:absolute;
+    top:5px;
+    left:20px;
+    zoom:1;
+    width:170px;
+    background:#342d15;
+    padding-bottom:5px;
+}
+
+aside h3 {
+    width:170px;
+    text-align:center;
+    font-size:40px;
+    line-height:50px;
+    font-family: 'GothicCustom', 'Arial Narrow', sans-serif;
+    color:#ccc1a3;
+    text-shadow:-1px 1px #675d3b;
+}
+
+
+.avatar {
+    display:block;
+    margin:auto;
+}
 
 footer {
-    background:#333;
     zoom:1;
     width:100%;
-    color:#fff;
     font-size:11px;
-    margin-top:40px;
+    margin:40px 0 0 200px;
 }
-footer p{ padding:15px 10px; }
+footer p{ }
 
-.main {}
+.main {
+    margin:0 0 0 200px;
+}
+
+.main h3 {
+    margin:20px 0 15px 0;
+    font-size:16px;
+    font-family: "Microsoft YaHei", STHeiti;
+}
+
+.myinfo {
+    width: 600px;
+    margin: 10px 0 30px 0;
+}
+
+.main dd {
+    color:#c1b493;
+}
+.main dt { margin:10px 0 5px 0; }
