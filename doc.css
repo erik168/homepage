@@ -1,0 +1,110 @@
+body {
+    background:#f9f9f9;
+    margin:0;
+    font-size:14px;
+    color:#333;
+}
+
+table {
+    font-size:14px;
+}
+a:link {
+    color:#1160b7;
+}
+a:visited {
+    color:#1160b7;
+}
+a:hover {
+    color:#cc004f;
+}
+
+
+.titlepage, .toc {
+    padding:5px;
+}
+
+.section,
+.toc,
+.list-of-tables,
+.list-of-examples {
+    padding-left:10px;
+}
+
+.chapter .title,
+.appendix .title {
+    margin-bottom:5px;
+    font-size:32px;
+}
+
+.section .toc {
+    border：0；
+}
+.section .titlepage {
+    padding-left:0;
+}
+.section .title {
+    font-size: 20px;
+    text-shadow:#aaa 0 0 0;
+    margin-bottom:5px;
+}
+
+
+
+.title {
+    color:#333;
+    font-weight:bold;
+    font-size:40px;
+    font-family: "Microsoft YaHei", STHeiti;
+    margin:5px 0 20px 0;
+    text-shadow:#aaa 1px 1px 2px;
+}
+.table .title,
+.example .title {
+    font-size:16px;
+}
+.titlepage {
+    border-bottom:2px solid #d1d1d6;
+    background:#f1f2f2;
+}
+
+.section .titlepage {
+    background:#f9f9f9;
+    border:0;
+    box-shadow:#ccc 0 0 0;
+}
+
+.titlepage hr {
+    display:none;
+}
+
+.author {
+    padding-bottom:5px;
+}
+.author h3,
+.affiliation,
+.address,
+.address p {display:inline;}
+
+.chapter p {
+    padding-left:10px;
+}
+.section p {
+    padding-left:0;
+}
+
+.programlisting {
+    background: #eee;
+    padding: 6px;
+    display: block;
+    font-family: monospace "Courier New";
+    font-size:14px;
+    margin: 1em 0px;
+    white-space: pre;
+}
+
+.biblioentry .title {
+    font-size:14px;
+    text-shadow:#aaa 0 0 0;
+    font-weight:normal;
+    padding-left:10px;
+}
