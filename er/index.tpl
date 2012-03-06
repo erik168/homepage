@@ -35,7 +35,7 @@ document.createElement( 'nav' );
             <p>ER (Enterprise RIA) Framework是一个开源框架，采用FreeBSD协议开源。</p>
         </div>
         <div class="subside">
-            <a href="er-${version}.tar.gz" class="downbtn">下载 (${version})</a>
+            <a href="release/er-{version}.tar.gz" class="downbtn">下载 ({version})</a>
             <a href="https://github.com/erik168/ER" target="_blank" class="gitbtn">[ Source at Github ]</a>
         </div>
     </div>
@@ -61,7 +61,7 @@ document.createElement( 'nav' );
         <p><a href="doc.html" target="_blank">ER框架使用手册</a></p>
 
 		<h3><a name="download"></a>下载</h3> 
-        <p>ER框架的最新版本是${version}，<a href="er-${version}.tar.gz">点击这里下载</a>。如果想要获取源码，请参见后面的“源码”部分。</p> 
+        <p>ER框架的最新版本是{version}，<a href="release/er-{version}.tar.gz">点击这里下载</a>。如果想要获取源码，请参见后面的“源码”部分。</p> 
         
         <h3><a name="source"></a>源码</h3> 
         <p>ER框架托管在Github上，您可以从Github上获得ER框架的最新源代码。<a href="https://github.com/erik168/ER" target="_blank">点击这里进入ER的Github</a>。</p> 
