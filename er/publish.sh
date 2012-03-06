@@ -11,10 +11,10 @@ then
 fi
 
 rm -f "${PUB_PATH}/index.html"
-${ER_PATH}/tool/pack.sh -v "${VER}" -t "${PUB_PATH}/release" -d "${DOCTOOL_PATH}"
+${ER_PATH}/tool/pack.sh -v ${VER} -t ${PUB_PATH}/release -d ${DOCTOOL_PATH}
 
-tar zfx "er-${VER}.tar.gz"
-mv "er-${VER}" src
+tar zfx "${PUB_PATH}/release/er-${VER}.tar.gz"
+mv "${PUB_PATH}/release/er-${VER}" "${PUB_PATH}/src"
 
 rm -f "${PUB_PATH}/doc.html"
 rm -rf "${PUB_PATH}/doc"
@@ -36,4 +36,4 @@ do
 	rm -f "${xml}"
 done
 
-cat index.tpl | sed "s:{version}:${VER}:g" > index.html
+cat "${PUB_PATH}/index.tpl" | sed "s:{version}:${VER}:g" > "${PUB_PATH}/index.html"
