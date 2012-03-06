@@ -11,7 +11,7 @@ then
 fi
 
 rm -f "${PUB_PATH}/index.html"
-${ER_PATHer}/tool/pack.sh -v "${VER}" -t "${PUB_PATH}/release" -d "${DOCTOOL_PATH}"
+${ER_PATH}/tool/pack.sh -v "${VER}" -t "${PUB_PATH}/release" -d "${DOCTOOL_PATH}"
 
 tar zfx "er-${VER}.tar.gz"
 mv "er-${VER}" src
