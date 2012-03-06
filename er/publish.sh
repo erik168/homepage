@@ -14,7 +14,8 @@ rm -f "${PUB_PATH}/index.html"
 $(${ER_PATH}/tool/pack.sh -v ${VER} -t ${PUB_PATH}/release -d ${DOCTOOL_PATH})
 
 rm -rf "${PUB_PATH}/src"
-tar zfx "${PUB_PATH}/release/er-${VER}.tar.gz" "${PUB_PATH}/src"
+tar zfx "${PUB_PATH}/release/er-${VER}.tar.gz" -C "${PUB_PATH}"
+mv "${PUB_PATH}/er-${VER}" "${PUB_PATH}/src"
 
 rm -f "${PUB_PATH}/doc.html"
 rm -rf "${PUB_PATH}/doc"
