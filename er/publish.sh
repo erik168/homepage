@@ -10,8 +10,8 @@ then
 	mkdir "${PUB_PATH}/release"
 fi
 
-rm -f "${PUB_PATH}/index.html"
-$(${ER_PATH}/tool/pack.sh -v ${VER} -t ${PUB_PATH}/release -d ${DOCTOOL_PATH})
+
+${ER_PATH}/tool/pack.sh -v ${VER} -t ${PUB_PATH}/release -d ${DOCTOOL_PATH}
 
 rm -rf "${PUB_PATH}/src"
 tar zfx "${PUB_PATH}/release/er-${VER}.tar.gz" -C "${PUB_PATH}"
@@ -34,7 +34,7 @@ do
 				--stringparam  section.label.includes.component.label 1 \
 				--stringparam html.stylesheet "/doc.css" \
 				-o "${PUB_PATH}/doc/esui/${filename}" "${DOCTOOL_PATH}" "${xml}" 
-	rm -f "${xml}"
 done
 
+rm -f "${PUB_PATH}/index.html"
 cat "${PUB_PATH}/index.tpl" | sed "s:{version}:${VER}:g" > "${PUB_PATH}/index.html"
