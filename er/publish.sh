@@ -1,6 +1,6 @@
 #/bin/sh
 
-VER="2.0.3"
+VER="2.1.0"
 ER_PATH="/home/ec2-user/er"
 DOCTOOL_PATH="/home/ec2-user/docbook-xsl-1.76.1/html/docbook.xsl"
 PUB_PATH=$(dirname "$0")
@@ -17,6 +17,9 @@ rm -rf "${PUB_PATH}/src"
 tar zfx "${PUB_PATH}/release/er-${VER}.tar.gz" -C "${PUB_PATH}"
 mv "${PUB_PATH}/er-${VER}" "${PUB_PATH}/src"
 
+rm -f "${PUB_PATH}/er*.jpg"
+rm -f "${PUB_PATH}/esui*.jpg"
+cp "${PUB_PATH}/src/doc/*.jpg" "${PUB_PATH}"
 rm -f "${PUB_PATH}/doc.html"
 rm -rf "${PUB_PATH}/doc"
 mkdir "${PUB_PATH}/doc"
