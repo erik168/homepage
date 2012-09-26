@@ -2,6 +2,13 @@ erik daily
 ==============
 
 
+### 2012-09-26 ###
+
++ 参加Tangram2 and MagicUI发布会
++ LiveForm代码评审
++ 组织技术分享：前端3D开发
++ 平台迁移：docbook2markdown工具开发
+
 ### 2012-09-25 ###
 
 + 讨论前端整合方案
