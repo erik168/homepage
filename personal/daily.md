@@ -2,6 +2,11 @@ erik daily
 ==============
 
 
+### 2012-09-27 ###
+
++ 平台迁移：docbook2markdown工具开发
++ 向王勇与金才同学了解comse那边前端工作
+
 ### 2012-09-26 ###
 
 + 参加Tangram2 and MagicUI发布会
